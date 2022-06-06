@@ -1,0 +1,38 @@
+root {
+    platform {
+        pwm_config {
+            template pwm_device {
+                serviceName = "";
+                match_attr = "";
+                num = 0;
+                base = 0x12070000;
+            }
+
+            device_0x30660000 :: pwm_device {
+                match_attr = "nxp_imx8mm_pwm_0";
+                num = 0;
+                base = 0x30660000;
+            }
+
+            device_0x30670000 :: pwm_device {
+                match_attr = "nxp_imx8mm_pwm_1";
+                num = 1;
+                base = 0x30670000;
+            }
+
+            device_0x30680000 :: pwm_device {
+                match_attr = "nxp_imx8mm_pwm_2";
+                num = 2;
+                base = 0x30680000;
+            }
+
+            device_0x30690000 :: pwm_device {
+                match_attr = "nxp_imx8mm_pwm_3";
+                num = 3;
+                base = 0x30690000;
+            }
+        }
+    }
+}
+
+

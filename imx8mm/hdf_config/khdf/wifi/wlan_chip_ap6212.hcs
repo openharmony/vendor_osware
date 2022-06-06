@@ -1,0 +1,14 @@
+root {
+    wlan_config {
+        Ap6212 :& chipList {
+            chipAp6212 :: chipInst {
+                match_attr = "hdf_wlan_chips_ap6212";
+                driverName = "ap6212";
+                sdio {
+                    vendorId = 0x02d0;
+                    deviceId = [0xa9a6];
+                }
+            }
+        }
+    }
+}
