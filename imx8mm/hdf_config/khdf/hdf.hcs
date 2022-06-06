@@ -1,0 +1,21 @@
+#include "device_info/device_info.hcs"
+#include "platform/imx8mm_i2c_config.hcs"
+#include "platform/imx8mm_watchdog_config.hcs"
+#include "platform/imx8mm_pwm_config.hcs"
+#include "platform/imx8mm_uart_config.hcs"
+#include "platform/imx8mm_sdio_config.hcs"
+#include "platform/imx8mm_emmc_config.hcs"
+#include "platform/imx8mm_spi_config.hcs"
+#include "input/input_config.hcs"
+#include "wifi/wlan_platform.hcs"
+#include "wifi/wlan_chip_ap6212.hcs"
+#include "audio/audio_config.hcs"
+#include "audio/codec_config.hcs"
+#include "audio/dai_config.hcs"
+#include "audio/dma_config.hcs"
+#include "lcd/lcd_config.hcs"
+#include "ethernet/eth_config.hcs"
+
+root {
+    module = "nxp,imx8mm";
+}

@@ -1,0 +1,32 @@
+root {
+    platform {
+        spi_config {
+            template spi_controller {
+                serviceName = "";
+                match_attr = "";
+                busNum = 0;
+                numCs = 0;
+            }
+
+            ecspi1_0x30820000 :: spi_controller {
+                match_attr = "nxp_imx8mm_spi_0";
+                busNum = 0;
+                numCs = 1;
+            }
+
+            ecspi2_0x30830000 :: spi_controller {
+                match_attr = "nxp_imx8mm_spi_1";
+                busNum = 1;
+                numCs = 1;
+            }
+
+            ecspi3_0x30840000 :: spi_controller {
+                match_attr = "nxp_imx8mm_spi_2";
+                busNum = 2;
+                numCs = 1;
+            }
+        }
+    }
+}
+
+

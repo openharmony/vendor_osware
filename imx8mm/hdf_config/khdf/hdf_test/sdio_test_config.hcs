@@ -1,0 +1,12 @@
+root {
+    module = "sdio";
+    sdio_config {
+        sdio_controller_tester {
+            match_attr = "SDIO_TEST";
+            busNum = 1;
+            funcNum = 1;
+            vendorId = 0x2d0;
+            deviceId = 0xa9a6;
+        }
+    }
+}

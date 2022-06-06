@@ -1,0 +1,32 @@
+root {
+    platform {
+        uart_config {
+            template uart_device {
+                serviceName = "";
+                match_attr = "";
+                driver_name = "ttymxc";
+                num = 0;
+            }
+            device_uart_0x30860000 :: uart_device {
+                num = 0;
+                serviceName = "HDF_PLATFORM_UART_0";
+                match_attr = "nxp_imx8mm_uart_0";
+            }
+            device_uart_0x30890000 :: uart_device {
+                num = 1;
+                serviceName = "HDF_PLATFORM_UART_1";
+                match_attr = "nxp_imx8mm_uart_1";
+            }
+            device_uart_0x30880000 :: uart_device {
+                num = 2;
+                serviceName = "HDF_PLATFORM_UART_2";
+                match_attr = "nxp_imx8mm_uart_2";
+            }
+            device_uart_0x30a60000 :: uart_device {
+                num = 3;
+                serviceName = "HDF_PLATFORM_UART_3";
+                match_attr = "nxp_imx8mm_uart_3";
+            }
+        }
+    }
+}
