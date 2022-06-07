@@ -4,8 +4,8 @@
   "device_build_path": "device/board/osware/imx8mm",
   "target_cpu": "arm",
   "type": "standard",
-  "version": "3.0",
-  "board": "imx8mm",
+  "version": "1.0",
+  "board": "MILOS_Standard0",
   "subsystems": [
     {
       "subsystem": "arkui",
