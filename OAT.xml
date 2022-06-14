@@ -62,7 +62,7 @@ Note:If the text contains special characters, please escape them according to th
         </policylist>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
-		        <filteritem type="filename" name="imx8mm/power_config/power_mode_config.xml" desc=""/>
+		        <filteritem type="filepath" name="imx8mm/power_config/power_mode_config.xml" desc=""/>
             </filefilter>
         </filefilterlist>
     </oatconfig>
