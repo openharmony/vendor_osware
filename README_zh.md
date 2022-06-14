@@ -2,7 +2,8 @@
 
 ## 介绍
 
-该仓库托管OSware产品：MILOS_Standard系列Openharmony智能硬件。
+该仓库托管OSware产品：MILOS_Standard系列OpenHarmony智能硬件。
+该仓主要托管内容为audio的宏控定义，khdf和uhdf相关的hcs定义以及产品定义信息等。
 
 ## 目录
 
