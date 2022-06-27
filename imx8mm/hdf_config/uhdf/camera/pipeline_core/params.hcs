@@ -8,7 +8,7 @@
         id = 0;
         name = "";
     }
-    priview :: stream_info {
+    preview :: stream_info {
         id = 0;
         name = "preview";
     }
