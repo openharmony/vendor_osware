@@ -444,7 +444,9 @@
         },
         {
           "component": "audio_device_driver",
-          "features": []
+          "features": [
+            "drivers_peripheral_audio_hal_notsupport_pathselect=false"
+          ]
         },
         {
           "component": "usb_device_driver",
