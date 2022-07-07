@@ -20,7 +20,7 @@ root {
             }
         }
     }
-    normal_privew :: pipeline_spec {
+    normal_preview :: pipeline_spec {
         name = "normal_preview";
         v4l2_source :: node_spec {
             name = "v4l2_source#0";
@@ -249,7 +249,7 @@ root {
             }
         }
     }
-    dual_privew :: pipeline_spec {
+    dual_preview :: pipeline_spec {
         name = "dual_preview";
         uvc :: node_spec {
             name = "uvc#0";
