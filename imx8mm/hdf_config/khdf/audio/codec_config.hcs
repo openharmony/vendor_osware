@@ -8,7 +8,7 @@ root {
         controller_0x120c1031 :: codec_controller {
             match_attr = "hdf_codec_driver";
             serviceName = "codec_service_0";
-            codecDaiName = "accessory8904_dai";
+            codecDaiName = "wm8904_codec_dai";
             regConfig { 
                 /*  reg: register address
                     rreg: register address
@@ -27,9 +27,9 @@ root {
                     0x2c,    0x2d,    7,    7,    0x0,    0x1,    0x1,    0,    0,  //"Capture Mute"
 		    0x20,    0x20,    4,    8,    0x0,    0xf,    0xf,    0,    0,  //"Mic Left Gain"
                     0x20,    0x20,    4,    8,    0x0,    0xf,    0xf,   0,    0,  //"Mic Right Gain"
-                /* dummy register for OpenHarmony audio*/
+                /* dummy register for hamoryos audio*/
                     0xff,    0xff,  16,   16,   0x0,    0x7,    0x7,    0,    0,  //"Render Channel Mode"
-                    0xff,    0xff,  16,   16,   0x0,    0x7,    0x7,    0,    0   //"Capture Channel Mode"
+                    0xff,    0xff,  16,   16,   0x0,    0x7,    0x7,    0,    0   //"Captrue Channel Mode"
 		
                 ];
 
@@ -44,7 +44,7 @@ root {
                         "External Codec Enable",
                         "Internally Codec Enable",
                         "Render Channel Mode",
-                        "Capture Channel Mode"
+                        "Captrue Channel Mode"
                     */
 
                     /*array index, iface, enable*/
@@ -52,7 +52,7 @@ root {
                     1,  1,  0,
                     2,  0,  0,
                     3,  1,  0,
-                /* dummy register for OpenHarmony audio */ 
+                /* dummy register for hamoryOs audio */ 
 		    4,  2,  1,
                     5,  2,  1,
                     8,  6,  0,
@@ -75,7 +75,7 @@ root {
                     11,    3,    0xff,    0x1,    12,    1,     0,     0, //DACR
                     8,     4,    0xff,    0x1,    13,    1,     1,     1, //LPGA
                     8,     5,    0xff,    0x1,    12,    1,     2,     1, //RPGA
-                    15,    6,     0x0,      0x1,    0,     0,     3,     1, //SPKL
+                    15,    6,     0,      0x1,    0,     0,     3,     1, //SPKL
                     15,    7,     0,      0x1,    0,     0,     4,     1, //SPKR
                     0,     8,     0,      0x1,    0,     0,     0,     0  //MIC
                 ];
