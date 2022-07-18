@@ -1,7 +1,4 @@
-# Copyright (C) 2021–2022 Beijing OSWare Technology Co., Ltd
-# This file contains confidential and proprietary information of
-# OSWare Technology Co., Ltd
-#
+# Copyright (c) 2021-2022 Huawei Device Co., Ltd.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -14,10 +11,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-enable_audio_imx8mm_64bit = true
-enable_audio_alsa_mode = false
-drivers_peripheral_audio_hal_notsupport_pathselect = false
-drivers_peripheral_audio_hdf_proxy_stub = true
-drivers_peripheral_audio_policy_config = true
-enable_audio_alsa_lib = false
-drivers_peripheral_audio_alsa_lib = false
+import("//build/ohos.gni")
+
+ohos_prebuilt_etc("audio_policy_config") {
+  source = "//vendor/osware/${product_name}/audio/arm64/audio_policy_config.xml"
+  subsystem_name = "hdf"
+  relative_install_dir = "audio"
+  install_images = [ chipset_base_dir ]
+  part_name = "drivers_peripheral_audio"
+}

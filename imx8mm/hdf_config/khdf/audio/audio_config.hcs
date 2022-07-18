@@ -17,8 +17,8 @@ root {
             serviceName = "hdf_audio_codec_primary_dev0";
             platformName = "dma_service_0";
             cpuDaiName = "dai_service";
-            accessoryDaiName = "accessory8904_dai";
-            accessoryName = "codec_service_0";
+            codecDaiName = "wm8904_codec_dai";
+            codecName = "codec_service_0";
             dspName = "dsp_service_0";
             dspDaiName = "dsp_dai";
         }
