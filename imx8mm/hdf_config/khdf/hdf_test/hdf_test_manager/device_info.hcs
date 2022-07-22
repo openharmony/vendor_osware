@@ -9,8 +9,8 @@ root {
                     priority = 10;
                     preload = 0;
                     permission = 0644;
-                    moduleName = "HDF_TEST";
-                    serviceName = "HDF_TEST";
+                    moduleName = "khdf_ut";
+                    serviceName = "khdf_ut";
                 }
                 device1 :: deviceNode {
                     policy = 2;
