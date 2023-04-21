@@ -1,0 +1,9 @@
+{
+  "parts": {
+    "product_osware_imx8mm": {
+      "module_list": [
+        "//vendor/osware/imx8mm/hals/audio:hdf_audio_config"
+      ]
+    }
+  }
+}
