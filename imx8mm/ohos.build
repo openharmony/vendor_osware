@@ -1,9 +1,11 @@
 {
   "parts": {
-    "product_osware_imx8mm": {
+    "product_imx8mm": {
       "module_list": [
-        "//vendor/osware/imx8mm/hals/audio:hdf_audio_config"
+        "//vendor/osware/imx8mm/hals/audio:hdf_audio_config",
+	"//vendor/osware/imx8mm/hdf_config/uhdf:hdf_config"
       ]
     }
-  }
+  },
+  "subsystem": "product_osware"
 }
